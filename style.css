@@ -1,41 +1,30 @@
-/* style.css */
-
-/* Global reset and background setup */
 body {
-    font-family: sans-serif;
-    background-color: #1a1a2e; /* Deep purple/blue for a cosmic feel */
-    color: #ffffff;
-    display: flex;
-    flex-direction: column; /* Stack all main elements vertically */
-    align-items: center;     /* Center them horizontally on the page */
-    min-height: 100vh;       /* Make sure the body takes up the whole viewport height */
-    margin: 0;
+    bakcground-color: #1e1e2e; color: #161616; font-family: Arial, sans-serif;
+}
+    
+h1 {
+    color:black;
+    font-size: 3rem;
 }
 
-/* Styling for the central container to give it a clean, framed look */
-main {
-    width: 90%;
-    max-width: 800px; /* Cap the width so it doesn't stretch too far on massive screens */
-    padding: 20px;
-    background-color: #16213e; /* Slightly lighter background for content area */
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* A nice shadow effect */
+.tab {
+    background-color: green; color: white;
+    font-size: medium;
 }
 
-/* Styling the main click button to make it pop! */
-#clicker-button {
-    padding: 15px 30px;
-    font-size: 24px;
-    cursor: pointer;
-    background-color: #e94560; /* Bright, action color (Crimson) */
-    color: white;
-    border: none;
-    border-radius: 10px;
-    transition: background-color 0.1s ease; /* Smooth transition for hover effects later! */
-    margin: 20px 0;
+#resource-bar {
+    color: red;
 }
 
-/* Simple hover effect for the button */
-#clicker-button:hover {
-    background-color: #ff6f78; /* Lighter shade on hover */
+.buy-btn {
+    font-weight: bold;
+}
+
+.cost {
+    font-weight: bold;
+}
+
+h2, adide h2 {
+    color:orange; 
+    font-size: 2rem;
 }
