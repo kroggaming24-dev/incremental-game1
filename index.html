@@ -4,28 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>incremental - The Incremental Game</title>
-    <!-- We link our CSS file here -->
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    <!-- All visible content goes inside the body tags -->
-     <main>
-    <h1>Welcome to incremental</h1>
-    
-    <!-- Placeholder for the main score display -->
-    <div id="score-container">
-        <h2>Score: <span id="current-score">0</span></h2>
-    </div>
-
-    <!-- This is where our main interactive button will go -->
-    <button id="clicker-button">Click Me!</button>
-
-    <!-- Placeholder for the list of upgrades/mods -->
-    <section id="upgrade-list">
-        <h3>Available Mods & Upgrades</h3>
-        <p>[Placeholder: List of available mods goes here]</p>
-    </section>
-     </main>
-     <script src="script.js"></script> 
+    <header>
+        <h1>Welcome to incremental</h1>
+            <div id="resources-bar">
+                <span class="resource">
+                    Wood: <span id="wood-count">0</span>
+                </span>
+                <span class="resource">
+                    Stone: <span id="stone-count">0</span>
+                </span> 
+                <span class="resource">
+                    Iron: <span id="iron-count">0</span>
+                </span>             
+            </div>
+    </header>
+    <nav>
+        <button class="tab" data-tab="resources" type="button">Ressources</button>
+        <button class="tab" data-tab="machines" type="button">Machines</button>
+        <button class="tab" data-tab="quests" type="button">Quests</button>
+        <button class="tab" data-tab="settings" type="button">Settings</button>
+    </nav>
+    <main>
+        <section id="resources">
+            <h2>Resources</h2>
+            <p>
+                <button class="gather-btn" data-tab="gather" type="button">Gather</button>
+            </p>
+            
+        </section>
+        <section id="machines">
+            <h2>Machines</h2>
+                <ul>
+                    <li>Smelter -cost: <span class="cost">10</span> <button class="buy-btn" type="button">Buy Smelter</button></li>
+                    <li>Crusher -cost: <span class="cost">10</span> <button class="buy-btn" type="button">Buy Crusher</button></li>
+                    <li>Generator -cost: <span class="cost">10</span> <button class="buy-btn" type="button">Buy Generator </button></li>
+                </ul>
+        </section>
+        <section id="quests">
+                <h2>Quests</h2>
+        </section>
+        <section id="settings">
+            <h2>Settings</h2>
+                <p>
+                    <button class="save-btn" type="button">Save</button>
+                    <button class="reset-btn" type="button">Reset</button>
+                </p>    
+        </section>
+    </main>
+    <aside>
+        <h2>Quests</h2>
+            <ul>
+                <li>Atramar</li>
+                <li>Plendor</li>
+                <li>Estob</li>
+            </ul>
+    </aside>
+    <footer>
+        <p>
+            V0.1 
+        </p>
+        <button class="save-btn" type="button">Save</button>
+    </footer>
+    <script src="script.js"></script> 
 </body>
 </html>
