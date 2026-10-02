@@ -1,30 +1,33 @@
 body {
-    bakcground-color: #1e1e2e; color: #161616; font-family: Arial, sans-serif;
+  background-color: #1e1e2e;
+  color: #bba4a4;
+  font-family: Arial, sans-serif;
 }
-    
+
 h1 {
-    color:black;
-    font-size: 3rem;
+  color: rgb(207, 70, 70);
+  font-size: 3rem;
 }
 
 .tab {
-    background-color: green; color: white;
-    font-size: medium;
+  background-color: green;
+  color: white;
+  font-size: 1rem;
 }
 
 #resource-bar {
-    color: red;
+  color: rgb(37, 180, 56);
 }
 
 .buy-btn {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .cost {
-    font-weight: bold;
+  font-weight: bold;
 }
 
-h2, adide h2 {
-    color:orange; 
-    font-size: 2rem;
+h2 {
+  color: orange;
+  font-size: 2rem;
 }
