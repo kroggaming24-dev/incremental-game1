@@ -1,26 +1,58 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #1e1e2e;
+  --panel: #2a2a3c;
+  --text: #e6e6f0;
+  --accent: #4aa3ff;
+  --border:#3a3a4f;
+  --heading: orange;
+  --resource: #4ade80;
+}
+
 body {
-  background-color: #1e1e2e;
-  color: #bba4a4;
+  background-color: var(--bg);
+  color: var(--text);
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+header,
+aside,
+main section {
+  background: var(--panel);
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+aside {
+  list-style: none;
+  padding: 0;
 }
 
 h1 {
-  color: rgb(207, 70, 70);
+  color: var(--heading);
   font-size: 3rem;
+  margin: 12px;
 }
 
 .tab {
-  background-color: green;
-  color: white;
+  background-color: var(--panel);
+  color: var(--text);
   font-size: 1rem;
+  padding: 12px;
 }
 
 #resource-bar {
-  color: rgb(37, 180, 56);
-}
-
-.buy-btn {
-  font-weight: bold;
+  color: var(--resource);
+  margin-right: 2px;
 }
 
 .cost {
@@ -28,6 +60,45 @@ h1 {
 }
 
 h2 {
-  color: orange;
+  color: var(--heading);
   font-size: 2rem;
+}
+
+li {
+  padding: 6px;
+}
+
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover:not(:disabled) { 
+  background-color: var(--accent); 
+}
+button:active { 
+  transform: scale(0.97); 
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.progress {
+  background-color: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  height: 16px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background-color: var(--accent);
+  height: 100%;
+  width: 40%;
+  transition: width 0.3s;
 }
